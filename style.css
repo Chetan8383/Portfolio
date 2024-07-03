@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+/* font-family: "Teko", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Noto Sans", sans-serif; */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #151414;
+}
+
+:root {
+    --primary: #a460f9;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+    background: #151414;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ////////////////////////////CURSOR/////////////////////// */
+/* ////////////////////////////////////////NAVBAR///////////////////////////////// */
+
+.navbar {
+    backdrop-filter: blur(5px);
+    top: 0%;
+}
+
+.navbar .navbar-brand {
+    font-family: "Teko", sans-serif;
+}
+
+.navbar .icon i {
+    background: transparent;
+    color: var(--primary);
+    margin-left: 10px;
+    border-radius: 2px;
+    padding: 5px 5px;
+    transition: .3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar .icon a i:hover {
+    box-shadow: 0 -1px 20px rgb(74, 71, 71);
+}
+
+.navbar .nav-item {
+    padding: 0 10px;
+}
+
+.navbar .nav-item .active {
+    color: white;
+    background-size: 0 2px, auto;
+    background-image: linear-gradient(var(--primary), var(--primary));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 75% 1.5px, auto;
+}
+
+.navbar .nav-item a {
+    color: rgb(155, 148, 148);
+    transition: 0.2s all ease-in-out;
+    background-size: 0 2px, auto;
+    background-image: linear-gradient(var(--primary), var(--primary));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.navbar .nav-item a:hover {
+    color: white;
+    background-size: 75% 1.5px, auto;
+}
+
+.navbar .btn-hire-me {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, var(--primary) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    box-shadow: 0 -1px 10px rgb(74, 71, 71);
+}
+
+.navbar .btn-hire-me:hover {
+    color: white;
+    border: transparent none;
+    background-position: left bottom;
+    transform: translateY(-5px);
+}
+
+@media (max-width:768px) {
+
+    .navbar .nav-item .active,
+    .navbar .nav-item a:hover {
+        background-size: 100% 1.5px, auto;
+    }
+}
+
+@media (max-width:450px) {
+    .navbar {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar .navbar-brand img {
+        width: 50px;
+    }
+
+    .navbar .icon i {
+        margin: 0;
+    }
+}
+
+@media (max-width:375px) {
+    .navbar .icon i {
+        display: none;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////LANDING-PAGE//////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.landing-page {
+    background-image: url(images/bg1.jpg);
+    background-attachment: fixed;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page .content {
+    margin-top: 15rem;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--primary);
+    /* The typwriter cursor */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 2s steps(50, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--primary);
+    }
+}
+
+
+.landing-page .services {
+    margin-top: 10rem;
+}
+
+.landing-page .services .box {
+    background: linear-gradient(to right bottom, black, #212529);
+    transition: .3s all !important;
+}
+
+.landing-page .services .box:hover {
+    background: linear-gradient(to right bottom, #212529, black);
+}
+
+.landing-page .services .box:hover {
+    transition: .3s all ease-in-out;
+    transform: scale(1.025);
+}
+
+.landing-page .services .box h3 {
+    color: darkgrey;
+    transition: .3s all ease-in-out;
+}
+
+.landing-page .services .box p {
+    transition: .3s all ease-in-out;
+}
+
+.landing-page .services .box:hover h3,
+.landing-page .services .box:hover p {
+    color: white;
+}
+
+.landing-page .services .icon {
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+/* ///////////////////////////////////////////////END */
+
+/* ///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////SERVICES-CAROUSEL////////////////////////////
+///////////////////////////////////////////////////////////////////////////////// */
+
+.service-carousel {
+    background: linear-gradient(to left top, black, #161719);
+}
+
+.service-carousel ul li {
+    padding: 0 2rem;
+    color: grey;
+}
+
+.service-carousel ul li i {
+    color: var(--primary);
+}
+
+/* /////////////////////////////////////////////END */
+
+/* /////////////////////////////////////////////////////////////////////////////
+////////////////////////////PORTFOLIO////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////// */
+
+.Portfolio {
+    padding: 7rem 0;
+}
+
+.Portfolio h1 {
+    font-size: 3rem;
+    color: #C4CFDE;
+    text-shadow: var(--primary) 10px 10px;
+}
+
+.Portfolio .content .img-site {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Portfolio .content img {
+    transition: .3s all;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    background-color: var(--primary);
+    box-shadow: -5px -5px 30px #212529, 5px 5px 30px black;
+    transform-origin: bottom center;
+}
+
+.Portfolio .content:hover img {
+    filter: brightness(10%);
+    box-shadow: none;
+    /* transform: scale(1.050); */
+}
+
+.Portfolio .content button {
+    position: absolute;
+    transition: .3s ease-in;
+    transform-origin: bottom center;
+    background-color: var(--primary);
+    color: white;
+    opacity: 0;
+}
+
+.Portfolio .content:hover button {
+    opacity: 100%;
+}
+
+.Portfolio .content:hover h5 {
+    color: var(--primary);
+    position: relative;
+}
+
+.Portfolio .content h5 {
+    color: grey;
+    font-weight: bold;
+    font-family: "Noto Sans", sans-serif;
+    transition: .3s ease-in;
+    transform-origin: bottom centertop;
+}
+
+.Portfolio .content h5 i {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    margin-left: 5px;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Portfolio .content:hover h5 i {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width:768px) {
+    .Portfolio .content img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width:450px) {
+    .Portfolio h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////END */
+
+/* /////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////MY RESUME////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////// */
+
+.Resume {
+    padding: 5rem 0;
+}
+
+.Resume p {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.Resume h1 {
+    font-size: 3rem;
+    color: #C4CFDE;
+    text-shadow: var(--primary) 10px 10px;
+}
+
+.Resume .list-group {
+    height: auto;
+    box-shadow: 0px 0px 30px black;
+    list-style: none;
+    border-radius: 2rem;
+    overflow: auto;
+    padding: 1rem;
+    top: 20%;
+}
+
+.Resume .list-group::-webkit-scrollbar {
+    height: 2px;
+}
+
+.Resume .list-group::-webkit-scrollbar-button {}
+
+
+.Resume .list-group a {
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    border-radius: 1rem;
+    transition: .3s all;
+}
+
+.Resume .list-group a:hover {
+    background: var(--primary);
+    transform: translateY(-5px);
+    z-index: 2;
+    box-shadow: none;
+}
+
+.Resume .list-group a li {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Resume .list-group .active {
+    border: 0px;
+    box-shadow: -5px -5px 0px #343131;
+    color: white;
+    background: var(--primary);
+    z-index: 1;
+}
+
+@media (max-width:768px) {
+
+    .Resume {
+        padding: 1rem 0;
+    }
+
+    .Resume .list-group a li {
+        padding: 0;
+    }
+}
+
+
+@media (max-width:450px) {
+    .Resume h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/*  */
+.Resume .content {
+    box-shadow: 5px 5px 30px black;
+    border-radius: 2rem;
+    color: white;
+    padding: 1.5rem;
+}
+
+/* about */
+
+.Resume .content .about .image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.Resume .content .about img {
+    transition: .2s ease;
+}
+
+.Resume .content .about img:hover {
+    transform: scale(1.050);
+}
+
+.Resume .content .about h1 {
+    font-size: 2rem;
+    text-shadow: none;
+    color: white;
+}
+
+.Resume .content .about ul {
+    list-style-type: circle;
+}
+
+.Resume .content .about .btn-download-cv {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, var(--primary) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    box-shadow: 0 -1px 10px rgb(74, 71, 71);
+    text-decoration: none;
+}
+
+.Resume .content .about .btn-download-cv:hover {
+    color: white;
+    border: transparent none;
+    background-position: left bottom;
+    transform: translateY(-5px);
+}
+
+.Resume .content .about h5 {
+    color: #C4CFDE;
+}
+
+.Resume .content .about .info-1 i {
+    font-size: 3rem;
+}
+
+.Resume .content .about .card {
+    background-color: transparent;
+    overflow: hidden;
+    transition: .3s all;
+}
+
+.Resume .content .about .card .card-text {
+    color: #C4CFDE;
+}
+
+.Resume .content .about .card .card-text:hover {
+    color: var(--primary);
+}
+
+.Resume .content .about .card:hover {
+    box-shadow: -5px -5px 30px black;
+}
+
+.Resume .content .about .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.Resume .content .about .card:hover img {
+    transform: scale(1);
+}
+
+@media (max-width:450px) {
+    .Resume .content .about .image {
+        height: 250px;
+    }
+}
+
+/* //////////////EDUCATION///////////////// */
+
+.education-card {
+    background-color: #151414;
+    box-shadow: 5px -5px 0px #343131;
+    transition: .3s ease;
+}
+
+.education-card p {
+    color: #555;
+    transition: 1s;
+    text-transform: capitalize;
+    font-weight: light;
+}
+
+li::marker {
+    color: var(--primary);
+}
+
+.education-card:hover p {
+    color: white;
+}
+
+.education-card:hover {
+    box-shadow: 0px 0px 2px var(--primary);
+    background-color: #212529;
+}
+
+/* ////////////////SKILLS////////////////// */
+
+.Resume .content .skills h1 {
+    font-size: 2.5rem;
+    text-shadow: none;
+    color: white;
+}
+
+.Resume .content .skills .design-skills p {
+    color: #C4CFDE;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.Resume .content .skills .design-skills .progress {
+    background: linear-gradient(to right bottom, black, #212529);
+}
+
+.Resume .content .skills .design-skills .progress .progress-bar {
+    border-radius: 2rem;
+    overflow: hidden;
+    animation: backgroundMove 2s forwards;
+    background: linear-gradient(to right, violet 0%, var(--primary) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+
+@keyframes backgroundMove {
+    from {
+        background-position: right bottom;
+    }
+
+    to {
+        background-position: left bottom;
+    }
+}
+
+/* //////DEVELOPMENT SKILL */
+
+.Resume .content .skills h1 {
+    font-size: 2.5rem;
+    text-shadow: none;
+    color: white;
+}
+
+.Resume .content .skills .development-skill p {
+    color: #C4CFDE;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.Resume .content .skills .development-skill .progress {
+    background: linear-gradient(to right bottom, black, #212529);
+}
+
+.Resume .content .skills .development-skill .progress .progress-bar {
+    border-radius: 2rem;
+    overflow: hidden;
+    animation: backgroundMove 2s forwards;
+    background: linear-gradient(to right, purple -80%, var(--primary) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////CONTACT///////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////// */
+
+.contact {
+    color: #C4CFDE;
+    padding: 5rem 0;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    text-shadow: var(--primary) 10px 10px;
+}
+
+.contact .card {
+    background-color: #151414;
+    box-shadow: 0px 0px 30px black;
+}
+
+.contact .card .img {
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.contact .card .img img {
+    transition: .3s;
+}
+
+.contact .card .img img:hover {
+    transform: scale(1.1);
+}
+
+.contact .card p {
+    font-size: 1.1rem;
+}
+
+.contact .card p a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all ease-in-out;
+    background-size: 0 2px, auto;
+    background-image: linear-gradient(var(--primary), var(--primary));
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.contact .card p a:hover {
+    color: var(--primary);
+    background-size: 100% 1.5px, auto;
+}
+
+.contact .card .icon i {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 -1px 10px rgb(74, 71, 71);
+    margin-right: 1rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.contact .card .icon i:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-8px);
+    box-shadow: none;
+}
+
+.contact .contact-form {
+    background-color: #151414;
+    box-shadow: 0px 0px 30px black;
+    font-family: "Teko", sans-serif;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+    background-color: black;
+    border: none;
+    padding: 1rem;
+    transition: .3s all;
+    box-shadow: 4px -4px 0px #343131;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+    box-shadow: 5px -5px 0px #343131;
+    color: var(--primary);
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: end;
+    font-family: "Teko", sans-serif;
+}
+
+.contact .contact-form button {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, var(--primary) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    /* box-shadow: 0 -1px 10px rgb(74, 71, 71); */
+    font-family: "Teko", sans-serif;
+    letter-spacing: 2px;
+}
+
+.contact .contact-form button:hover {
+    color: white;
+    border: transparent none;
+    background-position: left bottom;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width:450px) {
+    .contact h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-form input,
+    .contact .contact-form textarea {
+        padding: .5rem;
+    }
+
+}
+
+
+/* /////////////////////////FOOTER////////////////////// */
+
+footer h4 {
+    font-family: "Teko", sans-serif;
+    color: #C4CFDE;
+}
+
+footer p a:hover {
+    border-bottom: 1.5px solid var(--primary);
+}

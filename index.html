@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Chetan's Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- ///////////CSS/////////////////////// -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ////////////////////////////FONT AWSESOME/////////////////////////// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ////////////////////////////AOS EFFECTS///////////////////////////////////// -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container ">
+                <a class="navbar-brand d-flex flex-row align-items-center" href="#Resume">
+                    <img src="images/me.png" width="70px" height="auto"
+                        class="rounded-circle border border-3 border-secondary border-opacity-50" alt="">
+                    <h4 class="text-secondary ms-3">CHETAN MEHRA <br></h4>
+                </a>
+                <div class="icon d-flex flex-row">
+                    <a href="https://github.com/Chetan8383" target="_blank" class="text-decoration-none"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="text-decoration-none"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="mailto: chetanmehra095@gmail.com" target="_blank" class="text-decoration-none"><i
+                            class="bi bi-envelope-at-fill"></i></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-toggles fs-2" style="color: var(--primary);"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-lg-0 me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#landing-page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Portfolio">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#Contact">
+                        <button class="btn btn-hire-me mt-3 mt-sm-0">HIRE ME</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy-example rounded-2" tabindex="0">
+        <section class="landing-page" id="landing-page">
+            <div class="container-fluid">
+                <div class="row content">
+                    <div class="col-12">
+                        <div class="typewriter text-center px-md-5 text-capitalize">
+                            <h1>The best error message is the one that never shows up.</h1>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <strong class="fs-4">
+                            <p class="typewrite  text-secondary-emphassis" data-period="2000"
+                                style="color: var(--primary);"
+                                data-type='[ "Hey!!", "I Am Chetan Mehra.", "And an Web Developer.","Who Crafts", "Responsive Design.", "User Friendly UI/UX." ]'>
+                                <span class="wrap"></span>
+                            </p>
+                        </strong>
+
+                    </div>
+                </div>
+                <div class="row services justify-content-evenly mb-5 ">
+                    <div class="col-sm-10 col-lg-3 mb-4 mb-lg-0 d-flex align-self-stretch">
+                        <div class="box rounded-4 p-3 d-flex flex-column">
+                            <div class="icon py-3"><i class="bi bi-code-slash"></i></div>
+                            <h3>Fast Performance</h3>
+                            <p class="fw-light">Optimized for a smaller build size, faster dev compilation and
+                                dozens of other improvements.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-lg-3 mb-4 mb-lg-0 d-flex align-self-stretch">
+                        <div class="box rounded-4 p-3 d-flex flex-column">
+                            <div class="icon py-3"><i class="bi bi-phone"></i></div>
+                            <h3>Perfect Responsive</h3>
+                            <p class="fw-light">Our Template is full Perfect for all device. You can visit our
+                                template all device easily.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-lg-3 mb-4 mb-lg-0 d-flex align-self-stretch">
+                        <div class="box rounded-4 p-3 d-flex flex-column">
+                            <div class="icon py-3"><i class="bi bi-diagram-3"></i></div>
+                            <h3>Site Mapping</h3>
+                            <p class="fw-light">evolving creating a visual layout of a website's structure to organize
+                                and plan its pages and navigation/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-carousel overflow-x-hidden">
+            <marquee behavior="scroll" class="pt-4 my-auto" scrollamount="5" loop="infinite" direction="left">
+                <ul class="d-flex flex-row list-unstyled " style="transform: translateX(-100%);">
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> HTML5 & CSS3</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Bootstrap 5x</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Responsive & Mobile Friendly</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> 30+ Custom Elements</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> It’s Super Fast</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> One Page & Multi-Page Template</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Fully Customizable</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Google Fonts</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Root Color Use</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Desktop-First Design</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Cross-browser compatible</h5>
+                    </li>
+                    <li>
+                        <h5><i class="bi bi-check-circle-fill"></i> Modern Degin</h5>
+                    </li>
+
+                </ul>
+            </marquee>
+        </section>
+
+        <section class="Portfolio" id="Portfolio">
+            <div class="container">
+                <div class="row gy-5 ">
+                    <h1 class="text-center fw-bold ">My Projects</h1>
+                    <!-- PURPUL UI -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center ">
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank" class="img-site">
+                                <img src="images/web-dev-proj-purple ui.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">PURPUL UI <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- LAKSHYA CI -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center border-0">
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank" class="img-site">
+                                <img src="images/web-dev-proj-lakshaya-CI.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Lakshaya-CI <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- TRAVEL -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center border-0">
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank" class="img-site">
+                                <img src="images/web-dev-proj-travel.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Travel Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DOG SITE -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center">
+                            <a href="https://chetan8383.github.io/Vaccination-Web-layout/" target="_blank"
+                                class="img-site">
+                                <img src="images/web-dev-proj-dog site.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Vaccination-Web-layout/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Vaccination Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- MUSIC SITE -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center border-0">
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank" class="img-site"><img
+                                    src="images/web-dev-proj-music.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Music Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- OTAKU MART -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center border-0">
+                            <a href="https://chetan8383.github.io/Otaku-Mart/" target="_blank" class="img-site">
+                                <img src="images/web-dev-proj-otak-umart.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Otaku-Mart/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Otaku Mart <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FESTIVAL LIVE -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center ">
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank" class="img-site">
+                                <img src="images/web-dev-proj-festival.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Education Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- CONSALTANCY -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center border-0">
+                            <a href="https://chetan8383.github.io/Consultancy-site/" target="_blank" class="img-site">
+                                <img src="images/web-dev-proj-consaltansy.png" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Consultancy-site/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Consaltancy Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="content text-center border-0">
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank" class="img-site"><img
+                                    src="images/bg2.jpg" width="100%" class="rounded" alt="...">
+                                <button class="btn ">Live Preview <i class="bi bi-box-arrow-up-right"></i></button>
+                            </a>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
+                                class="text-decoration-none ">
+                                <h5 class="my-4 ">Education Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Resume" id="Resume">
+            <div class="container">
+                <p class="fw-light text-center" style="color: var(--primary);">Passionate Fresher</p>
+                <h1 class="text-center fw-bold">My Resume</h1>
+
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                        <ul class="list-group d-flex flex-row flex-lg-column position-sticky sticky-top" id="list-tab"
+                            role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                                <li>About</li>
+                            </a>
+                            <a class="list-group-item list-group-item-action " id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                                <li>Education</li>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+                                <li>Skills</li>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                                <li>Experience</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-10 ">
+                        <div class="tab-content content" id="nav-tabContent">
+                            <!-- ABOUT -->
+                            <div class="tab-pane fade show active about" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                <div class="row ">
+
+                                    <div class="col-12 ">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                                <div class="image rounded-4">
+                                                    <img src="images/me2.png" width="100%" height="400px"
+                                                        class="rounded-4 object-fit-cover" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                                <a href="#Portfolio" class="text-decoration-none">
+                                                    <small class="fw-light" style="color: var(--primary);">
+                                                        VISIT MY PORTFOLIO & HIRE ME</small>
+                                                </a>
+                                                <h1 class="fw-bold">Chetan Mehra</h1>
+                                                <p class="text-light-emphasis py-lg-3">
+                                                    As a passionate web developer, I specialize in creating responsive,
+                                                    user-friendly websites using HTML, CSS, and JavaScript. With a keen
+                                                    eye for
+                                                    detail and a commitment to delivering high-quality work, I enjoy
+                                                    turning
+                                                    complex problems into simple, beautiful solutions.
+                                                </p>
+                                                <ul class="lh-lg a">
+                                                    <li>Front-End Developer</li>
+                                                    <li>Responsive Design</li>
+                                                    <li>UI/UX Focus</li>
+                                                    <li>Cross-Browser Compatibility</li>
+                                                    <li>C, C++ & Python Programming Language</li>
+                                                </ul>
+                                                <a href="images/CHETAN MEHRA RESUME.pdf" download="">
+                                                    <button class="btn btn-download-cv my-3 ms-3">Download CV</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-5 text-center">
+                                        <h5 class="fw-bold">What I am Doing</h5>
+                                        <div class="row mt-4 d-flex justify-content-between ">
+                                            <div class="col-12 col-md-6 mb-3 mb-lg-0">
+                                                <div
+                                                    class="info-1 border border-secondary border-opacity-50 p-3 rounded-4">
+                                                    <i class="bi bi-pencil-square" style="color: var(--primary);"></i>
+                                                    <h5 class="fw-bold">Front-End Web Developer</h5>
+                                                    <p class="text-light-emphasis">
+                                                        Skilled front-end developer proficient in HTML, CSS, JavaScript,
+                                                        Bootstrap, Tailwind, and React. Passionate about creating
+                                                        responsive, user-friendly web applications with modern
+                                                        technologies.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div
+                                                    class="info-1 border border-secondary border-opacity-50 p-3 rounded-4">
+                                                    <i class="bi bi-palette2 " style="color: var(--primary);"></i>
+                                                    <h5 class="fw-bold">UI/UX Developer</h5>
+                                                    <p class="text-light-emphasis">
+                                                        Experienced in web design, specializing in UI/UX. Proficient in
+                                                        creating intuitive, visually appealing interfaces With
+                                                        Responsive Design that enhance
+                                                        user experience and engagement.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-5 text-center">
+                                        <h5 class="fw-bold">Our Trusted Clients</h5>
+                                        <div class="row row-cols-1 row-cols-sm-2 mt-3 row-cols-md-4 g-4">
+                                            <div class="col ">
+                                                <div
+                                                    class="card h-100 border border-secondary border-opacity-50 rounded-4">
+                                                    <img src="images/bg2.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text">Paramjeet Singh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 border border-secondary border-opacity-50 rounded-4">
+                                                    <img src="images/bg2.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text ">Paramjeet Singh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 border border-secondary border-opacity-50 rounded-4">
+                                                    <img src="images/bg2.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text ">Paramjeet Singh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 border border-secondary border-opacity-50 rounded-4">
+                                                    <img src="images/bg2.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body ">
+                                                        <p class="card-text ">Paramjeet Singh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EDUCATION -->
+                            <div class="tab-pane fade " id="list-profile" role="tabpanel"
+                                aria-labelledby="list-profile-list">
+                                <div class="row">
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">Pursuing Bachelor's From Distance
+                                                    Learning</h3>
+                                                <p>I'm currently pursuing my Bachelor's in Computer Applications (BCA)
+                                                    from IGNOU University.</p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">IGNOU
+                                                    DELHI RC-1</small>
+                                            </div>
+                                        </div>
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">Skyscanner Front-End Software Engineering
+                                                </h3>
+                                                <p>I Have Also completed Skyscanner's Front-End Software Engineering on
+                                                    Forage.</p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">Skyscanner (2024)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">Diploma In Web Development</h3>
+                                                <p>I completed my web development training at Lakshaya Computer
+                                                    Institute, becoming proficient in HTML, CSS, JavaScript, Bootstrap,
+                                                    Tailwind, and React. I specialize in creating responsive web
+                                                    applications.</p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">Lakshaya
+                                                    Computer Institute (2022-2024)</small>
+                                            </div>
+                                        </div>
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">C, Python Language</h3>
+                                                <p>I have learned machine learning language's and will also learn more
+                                                    language's.</p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">Lakshaya
+                                                    Computer Institute (2022-2024)</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- skills -->
+                            <div class="tab-pane fade skills" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 design-skills">
+                                        <p class="fw-light  m-0" style="color: var(--primary);">Features</p>
+                                        <h1 class="fw-bold mb-lg-3">Design Skill</h1>
+                                        <div class="py-3">
+                                            <p>PHOTOSHOT</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 80%;">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>figma</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 95%;">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>adobe-xd</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 65%;">65%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>adobe-illustrator</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 70%;">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>DESIGN</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 91%;">91%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 development-skill">
+                                        <p class="fw-light m-0" style="color: var(--primary);">Tech Skills</p>
+                                        <h1 class="fw-bold mb-3">Development Skill</h1>
+                                        <div class="py-3">
+                                            <p>HTML</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 97%;">97%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>CSS</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>JAVASCRIPT</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 70%;">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>SOFTWARE</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 85%;">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>Bootstrap</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 97%;">97%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>TailWind</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 70%;">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>C Language</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 70%;">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="py-3">
+                                            <p>Python</p>
+                                            <div class="progress" role="progressbar" aria-label="Example high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 10px">
+                                                <div class="progress-bar" style="width: 70%;">70%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EXPERIENCE -->
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                aria-labelledby="list-settings-list">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">OctaNet Services Pvt Ltd.</h3>
+                                                <p>
+                                                <ul style="list-style-type: circle;">
+                                                    <li>Working as an Front-End Developer in OctaNet Services</li>
+                                                    <li>Maintaing and creating new page's and tasks</li>
+                                                </ul>
+                                                </p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">
+                                                    currently
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">Skyscanner Front-End Software Engineering
+                                                    virtual experience programme on Forage </h3>
+                                                <p>
+                                                <ul style="list-style-type: circle;">
+                                                    <li>Completed a job simulation where I built a web application using
+                                                        React as a front-end engineer at Skyscanner.</li>
+                                                    <li>Developed a page for picking a travel date using Skyscanner’s
+                                                        open-source Backpack React library.</li>
+                                                    <li>Customised my application and ran automated tests to ensure it
+                                                        rendered properly.</li>
+                                                </ul>
+                                                </p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">
+                                                    Skyscanner Front-End - April 2024
+                                                </small>
+                                            </div>
+                                        </div>
+
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">Moreton Bay Regional Council
+                                                    Entrepreneurship & Innovation: Web Development Job Simulation on
+                                                    Forage </h3>
+                                                <p>
+                                                <ul style="list-style-type: circle;">
+                                                    <li>Completed a job simulation involving website planning and
+                                                        creation.</li>
+                                                    <li>Created a sitemap and userflow using a diagram creation tool.
+                                                    </li>
+                                                    <li>Used HTML & CSS to create a landing page.</li>
+                                                </ul>
+                                                </p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">
+                                                    Moreton Bay Front-End - May 2024
+                                                </small>
+                                            </div>
+                                        </div>
+
+                                        <div class="education-card rounded-4 mb-4 p-md-3">
+                                            <div class="alert" role="alert">
+                                                <h3 class="alet-heading ">Accenture North America Data Analytics and
+                                                    Visualization Job Simulation on Forage - April 2024</h3>
+                                                <p>
+                                                <ul style="list-style-type: circle;">
+                                                    <li>Completed a simulation focused on advising a hypothetical social
+                                                        media client as a Data Analyst at Accenture</li>
+                                                    <li>Cleaned, modelled and analyzed 7 datasets to uncover insights
+                                                        into content trends to inform strategic decisions</li>
+                                                    <li>Prepared a PowerPoint deck and video presentation to communicate
+                                                        key insights for the client and internal stakeholders</li>
+                                                </ul>
+                                                </p>
+                                                <small class="mb-0 border-top border-secondary pt-1"
+                                                    style="color: var(--primary);">
+                                                    Accenture - April 2024
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="Contact">
+            <div class="container text-center">
+                <p class="text-uppercase" style="color: var(--primary);">CONTACT</p>
+                <h1 class="fw-bold">Contact With Me</h1>
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                        <div class="card text-start rounded-4 p-4">
+                            <div class="img rounded-4">
+                                <img src="images/hand shake.png" class="card-img-top rounded-4" alt="...">
+                            </div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title text-white">Chetan Mehra</h3>
+                                <p class="card-text text-secondary">Front-End WebDeveloper</p>
+                                <p class="card-text text-secondary">I am available for freelance work. Connect with me
+                                    via and call in to my account.</p>
+                                <p class="card-text text-secondary">
+                                    Phone: <a href="tel:8383914579" class="">+91 8383914579</a> <br>
+                                    Email: <a href="mailto:chetanmehra095@gmail.com"
+                                        class="">chetanmehra095@gmail.com</a>
+                                </p>
+                                <p class="card-text text-secondary">FIND ME IN</p>
+                                <div class="icon mt-4">
+                                    <a href="" class="text-decoration-none"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 align-self-stretch d-flex">
+                        <div class="contact-form p-4 rounded-4">
+                            <form action="">
+                                <div class="row ">
+                                    <div class="col-12 col-sm-6 my-0 my-sm-4">
+                                        <input type="text" class="form-control" placeholder="FIRST NAME"
+                                            aria-label="First name" required>
+                                    </div>
+                                    <div class="col-12 col-sm-6 my-4">
+                                        <input type="number" class="form-control" placeholder="PHONE NUMBER"
+                                            aria-label="phone number" required>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="email" class="form-control" placeholder="EMAIL" aria-label="email"
+                                            required>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="text" class="form-control" placeholder="SUBJECT"
+                                            aria-label="subject" required>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 250px"></textarea>
+                                    </div>
+                                    <div class="col ">
+                                        <button class="btn bg-black w-100">SEND MESSAGE <i
+                                                class="bi bi-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container py-5 border-top border-1 border-secondary border-opacity-50">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="images/me.png" width="70px" height="auto"
+                        class="rounded-circle border border-3 border-secondary border-opacity-50" alt="">
+                    <h4 class="text-secondarys mt-4">CHETAN MEHRA <br></h4>
+                    <p class="text-secondary">&copy; 2024. All rights reserved by
+                        <a href="" class="text-decoration-none text-secondary">CHETANMEHRA</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!--//////////// /////////AOS EFFECTS /////////-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- ////////////////////////////SCRIPT//////////// -->
+    <script src="script.js"></script>
+</body>
+
+</html>
