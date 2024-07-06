@@ -191,6 +191,11 @@ body {
     }
 }
 
+@media (max-width:450px) {
+    .typewriter h1 {
+        font-size: 1.5rem;
+    }
+}
 
 .landing-page .services {
     margin-top: 10rem;
