@@ -276,7 +276,6 @@ body {
     height: 350px;
     width: 350px;
     object-fit: cover;
-    background-color: var(--primary);
     box-shadow: -5px -5px 30px #212529, 5px 5px 30px black;
     transform-origin: bottom center;
 }

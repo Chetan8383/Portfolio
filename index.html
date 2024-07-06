@@ -256,7 +256,7 @@
                             </a>
                             <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
                                 class="text-decoration-none ">
-                                <h5 class="my-4 ">Education Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                                <h5 class="my-4 ">Festival Live <i class="bi bi-box-arrow-up-right"></i></h5>
                             </a>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                             </a>
                             <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"
                                 class="text-decoration-none ">
-                                <h5 class="my-4 ">Education Site <i class="bi bi-box-arrow-up-right"></i></h5>
+                                <h5 class="my-4 ">Travel <i class="bi bi-box-arrow-up-right"></i></h5>
                             </a>
                         </div>
                     </div>
@@ -393,7 +393,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 mt-5 text-center">
+                                    <!-- <div class="col-12 mt-5 text-center">
                                         <h5 class="fw-bold">Our Trusted Clients</h5>
                                         <div class="row row-cols-1 row-cols-sm-2 mt-3 row-cols-md-4 g-4">
                                             <div class="col ">
@@ -433,7 +433,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <!-- EDUCATION -->
@@ -734,30 +734,25 @@
                     </div>
                     <div class="col-12 col-lg-7 align-self-stretch d-flex">
                         <div class="contact-form p-4 rounded-4">
-                            <form action="">
+                            <form action="contact.php" method="post">
                                 <div class="row ">
                                     <div class="col-12 col-sm-6 my-0 my-sm-4">
-                                        <input type="text" class="form-control" placeholder="FIRST NAME"
-                                            aria-label="First name" required>
+                                        <input type="text" name="first_name" class="form-control" placeholder="FIRST NAME" aria-label="First name" required>
                                     </div>
                                     <div class="col-12 col-sm-6 my-4">
-                                        <input type="number" class="form-control" placeholder="PHONE NUMBER"
-                                            aria-label="phone number" required>
+                                        <input type="number" name="phone_number" class="form-control" placeholder="PHONE NUMBER" aria-label="phone number" required>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="email" class="form-control" placeholder="EMAIL" aria-label="email"
-                                            required>
+                                        <input type="email" name="email" class="form-control" placeholder="EMAIL" aria-label="email" required>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="SUBJECT"
-                                            aria-label="subject" required>
+                                        <input type="text" name="subject" class="form-control" placeholder="SUBJECT" aria-label="subject" required>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextarea2" style="height: 250px"></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px" required></textarea>
                                     </div>
                                     <div class="col ">
-                                        <button class="btn bg-black w-100">SEND MESSAGE <i
+                                        <button  type="submit" class="btn bg-black w-100">SEND MESSAGE <i
                                                 class="bi bi-arrow-right"></i></button>
                                     </div>
                                 </div>
