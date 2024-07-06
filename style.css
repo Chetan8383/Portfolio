@@ -212,7 +212,7 @@ body {
 
 .landing-page .services .box:hover {
     transition: .3s all ease-in-out;
-    transform: scale(1.025);
+    transform: scale(.95);
 }
 
 .landing-page .services .box h3 {
