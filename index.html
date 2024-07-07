@@ -73,7 +73,8 @@
             <div class="container-fluid">
                 <div class="row content">
                     <div class="col-12">
-                        <div class="typewriter text-center px-md-5 text-capitalize" data-aos="zoom-in" data-aos-duration="500">
+                        <div class="typewriter text-center px-md-5 text-capitalize" data-aos="zoom-in"
+                            data-aos-duration="500">
                             <h1>The best error message is the one that never shows up.</h1>
                         </div>
                     </div>
@@ -117,9 +118,9 @@
             </div>
         </section>
 
-        <section class="service-carousel overflow-x-hidden" >
+        <section class="service-carousel overflow-x-hidden">
             <marquee behavior="scroll" class="pt-4 my-auto" scrollamount="5" loop="infinite" direction="left">
-                <ul class="d-flex flex-row list-unstyled " style="transform: translateX(-100%);" >
+                <ul class="d-flex flex-row list-unstyled " style="transform: translateX(-100%);">
                     <li>
                         <h5><i class="bi bi-check-circle-fill"></i> HTML5 & CSS3</h5>
                     </li>
@@ -164,7 +165,8 @@
         <section class="Portfolio" id="Portfolio">
             <div class="container">
                 <div class="row gy-5 ">
-                    <h1 class="text-center fw-bold" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="0">My Projects</h1>
+                    <h1 class="text-center fw-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">My
+                        Projects</h1>
                     <!-- PURPUL UI -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="content text-center ">
@@ -293,14 +295,15 @@
         <section class="Resume" id="Resume">
             <div class="container">
                 <p class="fw-light text-center" style="color: var(--primary);">Passionate Fresher</p>
-                <h1 class="text-center fw-bold" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="0">My Resume</h1>
+                <h1 class="text-center fw-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">My
+                    Resume</h1>
 
                 <div class="row mt-5">
                     <div class="col-12 col-lg-2 mb-3 mb-lg-0">
                         <ul class="list-group d-flex flex-row flex-lg-column position-sticky sticky-top" id="list-tab"
                             role="tablist">
                             <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home" >
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
                                 <li>About</li>
                             </a>
                             <a class="list-group-item list-group-item-action " id="list-profile-list"
@@ -329,7 +332,7 @@
                                             <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                                                 <div class="image rounded-4">
                                                     <img src="images/me2.png" width="100%" height="400px"
-                                                        class="rounded-4 object-fit-cover" alt=""  >
+                                                        class="rounded-4 object-fit-cover" alt="">
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-8">
@@ -705,7 +708,7 @@
         <section class="contact" id="Contact">
             <div class="container text-center">
                 <p class="text-uppercase" style="color: var(--primary);">CONTACT</p>
-                <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="0">Contact With Me</h1>
+                <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">Contact With Me</h1>
                 <div class="row mt-5">
                     <div class="col-12 col-lg-5 mb-4 mb-lg-0">
                         <div class="card text-start rounded-4 p-4">
@@ -733,27 +736,36 @@
                     </div>
                     <div class="col-12 col-lg-7 align-self-stretch d-flex">
                         <div class="contact-form p-4 rounded-4">
-                            <form action="contact.php" method="post">
+                            <form method="POST" id="form">
                                 <div class="row ">
+                                    <input type="hidden" name="access_key" value="786d87fd-3e16-4a69-a763-8a42c59fc5bf">
+                                    <input type="hidden" name="from_name" value="Portfolio">
+
                                     <div class="col-12 col-sm-6 my-0 my-sm-4">
-                                        <input type="text" name="first_name" class="form-control" placeholder="FIRST NAME" aria-label="First name" required>
+                                        <input type="text" name="full_name" class="form-control" placeholder="Full NAME"
+                                            aria-label="name" required>
                                     </div>
                                     <div class="col-12 col-sm-6 my-4">
-                                        <input type="number" name="phone_number" class="form-control" placeholder="PHONE NUMBER" aria-label="phone number" required>
+                                        <input type="number" name="phone_number" class="form-control"
+                                            placeholder="PHONE NUMBER" aria-label="phone number" required>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="email" name="email" class="form-control" placeholder="EMAIL" aria-label="email" required>
+                                        <input type="email" name="email" class="form-control" placeholder="EMAIL"
+                                            aria-label="email" required>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="text" name="subject" class="form-control" placeholder="SUBJECT" aria-label="subject" required>
+                                        <input type="text" name="subject" class="form-control" placeholder="SUBJECT"
+                                            aria-label="subject" required>
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <textarea name="message" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px" required></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 250px" required></textarea>
                                     </div>
                                     <div class="col ">
-                                        <button  type="submit" class="btn bg-black w-100">SEND MESSAGE <i
+                                        <button type="submit" class="btn bg-black w-100">SEND MESSAGE <i
                                                 class="bi bi-arrow-right"></i></button>
                                     </div>
+                                    <div id="result"></div>
                                 </div>
                             </form>
                         </div>
@@ -766,7 +778,7 @@
     <footer>
         <div class="container py-5 border-top border-1 border-secondary border-opacity-50">
             <div class="row">
-                <div class="col-12 text-center" >
+                <div class="col-12 text-center">
                     <img src="images/me.png" width="70px" height="auto"
                         class="rounded-circle border border-3 border-secondary border-opacity-50" alt="">
                     <h4 class="text-secondarys mt-4">CHETAN MEHRA <br></h4>

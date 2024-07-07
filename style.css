@@ -375,11 +375,8 @@ body {
 }
 
 .Resume .list-group::-webkit-scrollbar {
-    height: 2px;
+    height: 0;
 }
-
-.Resume .list-group::-webkit-scrollbar-button {}
-
 
 .Resume .list-group a {
     text-decoration: none;
