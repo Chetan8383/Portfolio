@@ -8,6 +8,10 @@ body {
     background: #151414;
 }
 
+.container-fluid {
+    max-width: 1400px;
+}
+
 :root {
     --primary: #B960FD;
 }
@@ -188,6 +192,12 @@ body {
 
     50% {
         border-color: var(--primary);
+    }
+}
+
+@media (min-width:1400px) {
+    .landing-page {
+        background-size: 100% auto;
     }
 }
 
