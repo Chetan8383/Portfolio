@@ -232,10 +232,6 @@ body {
 
 .landing-page .services .box p {
     transition: .3s all ease-in-out;
-}
-
-.landing-page .services .box:hover h3,
-.landing-page .services .box:hover p {
     color: white;
 }
 
