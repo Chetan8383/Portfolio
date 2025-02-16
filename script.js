@@ -103,4 +103,4 @@ form.addEventListener('submit', function (e) {
 });
 
 // //////////////
-new ScrollCarousel(".my-carousel")
+// new ScrollCarousel(".my-carousel")
