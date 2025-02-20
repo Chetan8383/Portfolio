@@ -4,7 +4,10 @@
 /* font-family: "Noto Sans", sans-serif; */
 
 body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Noto Sans", sans-serif;
+
+
     background: #151414;
 }
 
@@ -13,7 +16,7 @@ body {
 }
 
 :root {
-    --primary: #B960FD;
+    --primary: #ff7c0a;
 }
 
 ::-webkit-scrollbar {
@@ -180,6 +183,15 @@ body {
     to {
         width: 100%;
     }
+}
+
+.typewrite {
+    font-size: 35px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background: linear-gradient(to right, #f32170,
+            #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 /* The typewriter cursor effect */

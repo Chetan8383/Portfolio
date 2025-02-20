@@ -101,3 +101,6 @@ form.addEventListener('submit', function (e) {
             }, 3000);
         });
 });
+
+// //////////////
+// new ScrollCarousel(".my-carousel")
